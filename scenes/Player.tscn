@@ -1,0 +1,23 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/placeholder/Action RPG Resources/Player/Player.png" type="Texture" id=1]
+[ext_resource path="res://script/Player.gd" type="Script" id=2]
+[ext_resource path="res://assets/shaders/JitterFreePixelArt.tres" type="Material" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 3.0
+height = 6.0
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+light_mask = -2147483647
+material = ExtResource( 3 )
+texture = ExtResource( 1 )
+hframes = 62
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.140301, 10.1022 )
+rotation = 1.5708
+shape = SubResource( 1 )
