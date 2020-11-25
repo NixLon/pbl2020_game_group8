@@ -8,11 +8,12 @@
 
 [node name="Sprite" type="Sprite" parent="."]
 material = ExtResource( 3 )
-position = Vector2( 1.3829, -92.1923 )
+position = Vector2( -9.91458, -101.111 )
 scale = Vector2( 0.453339, 0.453339 )
 texture = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( -13, -2 )
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 current = true
