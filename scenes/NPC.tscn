@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/placeholder/Action RPG Resources/Player/Player.png" type="Texture" id=1]
+[ext_resource path="res://assets/shaders/JitterFreePixelArt.tres" type="Material" id=3]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 5.63994
+height = 4.47571
+
+[node name="NPC" type="Node2D"]
+
+[node name="NPC Collision" type="StaticBody2D" parent="."]
+
+[node name="Sprite" type="Sprite" parent="NPC Collision"]
+material = ExtResource( 3 )
+position = Vector2( 0.972382, -7.59408 )
+texture = ExtResource( 1 )
+hframes = 60
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NPC Collision"]
+position = Vector2( 0.00270271, 0.000601053 )
+rotation = 1.5708
+shape = SubResource( 1 )
