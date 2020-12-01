@@ -59,22 +59,10 @@ material = ExtResource( 3 )
 position = Vector2( -2.12132, -29.3449 )
 texture = ExtResource( 1 )
 hframes = 10
-frame = 9
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="NPC Interact"]
 anims/TalkEnter = SubResource( 2 )
 anims/TalkExit = SubResource( 3 )
-
-[node name="Label" type="Label" parent="NPC Interact"]
-visible = false
-margin_left = -11.274
-margin_top = -37.5953
-margin_right = 10.726
-margin_bottom = -23.5953
-text = "[ ? ]"
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Timer" type="Timer" parent="NPC Interact"]
 [connection signal="body_entered" from="NPC Interact" to="NPC Interact" method="_on_NPC_Interact_body_entered"]
